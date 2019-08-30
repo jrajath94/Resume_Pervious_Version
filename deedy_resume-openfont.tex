@@ -1,0 +1,272 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace*{0.01}
+\namesection{Rajath}{John Bosco}
+{ 
+\href{mailto:rajathj2@illinois.edu}{rajathj2@illinois.edu} | +1-(217)-819-8905
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of Illinois at Urbana-Champaign}
+\descript{MS in Information Management (Data Science Track )}
+\location{Exp. Grad May 2021| Champaign, IL  \\}
+\sectionsep
+\vspace{5pt}
+\subsection{SJCE (JSSST University)}
+\descript{BE in Computer Science}
+\location{Grad July 2016 | Mysore, India  \\ Cum. GPA: 8.5}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{MOOC}
+Machine Learning-Coursera \\
+Deep Learning Specialisation - Coursera* \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+Data Structures\\
+Design and Analysis of Algorithms \\ 
+Big Data Analytics \\
+Software Engineering \\
+Operating Systems \\
+Computer Networks\\
+Probability Statistics and Queuing\\
+Finite Automata and Formal Languages \\
+Computer Graphics\\ 
+Database Management and Systems \\ 
+Advanced Web Technologies \\
+Advanced Computer Architecture\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\location{Programming :}
+Java \textbullet{}  Python \textbullet{} C  \\ 
+\location{Web Programming :}
+HTML \textbullet{} CSS \textbullet{} Javascript  \\
+\location{Familiar:}
+Tableau \textbullet{}TensorFlow  \textbullet{} Hadoop
+\textbullet{}Hbase
+\textbullet{}Spark
+\textbullet{}Kafka
+\textbullet{}Hive
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Volunteering Exp.}
+\location{Visa Hackathon}
+\textbullet{}Volunteered in Editing and Tech Infrastructure teams during the events. \linebreak 
+\location{Java Tutor - Computer Paradise}
+\textbullet{}I volunteered as a Java tutor to a foreign international for three months. \linebreak
+\location{Visa CSR} 
+\textbullet{}Volunteered many events like helping physically challenged students, Oxfam Trailwalker, Charity visits etc. \linebreak 
+\location{Helping Hands}  
+\textbullet{}Helped poor students, people by raising funds, holding meetups etc.
+
+
+\sectionsep
+
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Visa Inc | Operations and Infrastructure \newline}
+%%\descript{}
+\location{Systems Analyst | December 2018 - August 2019 | Bangalore, India \newline
+}
+\begin{tightemize}
+\item \ Worked on Visa Artificial Intelligence Platform (VAIP)\texttrademark, Tokenization (Apple Pay\texttrademark, Google Pay\texttrademark, Android Pay\texttrademark, Samsung Pay\texttrademark, NetFlix Pay\texttrademark, Fitbit Pay\texttrademark etc) and Verified by Visa (VBV)\texttrademark. 
+\item Developed scripts for checking vital processes,overall system heath-check , kernel details and worked on CI/CD pipeline to  deploy them in real-time for VAIP. 
+\item  Reduced 75\% of the overall time involved in the remediation of the servers by deploying shell scripts to start and stop instances for VBV and Tokenization.
+\item  Received 19 “Go Beyond” - Corporate recognition for handling important releases, issues and for volunteering in Hackathon, Rio Olympics’ Promotion and charity events.
+\end{tightemize}
+\location{Associate Systems Analyst | July 2016 – December 2018| Bangalore, India
+}
+\begin{tightemize}
+\item  Successfully on-boarded 39 banks across the world for Tokenization by validating API calls,SSL certificates and providing key suggestions to improve QoS.
+\item Designed Dashboards, visualized transaction data with the help of Splunk to calculate metrics and monitor applications in real-time for VBV, VAIP and Tokenization.
+\item  Automated the process of checking connectivity between application and remote servers by enabling passwordless-SSH through Shell scripts in a multi-tier architecture, effectively reducing the time by 50\%.
+\end{tightemize}
+
+
+\sectionsep
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{Product Analysis in Social Media using Data Analytics}
+
+\begin{tightemize}
+
+
+\item \normalsize {Worked on Information Retrieval techniques to develop a generic platform to visualize and compare specifications of products.
+\item Achieved 82\% accuracy through sentiment analysis by using NLTK on product reviews obtained through Social Media (Facebook, Twitter) in Real-time.} \end{tightemize}
+\sectionsep
+
+\runsubsection{Prediction of Diabetes }
+\begin{tightemize}
+\item \normalsize { Achieved 90\%  accuracy while predicting diabetes using Pima Indians Diabetes Data-set with the help of ML algorithms like Logistic Regression and KNN.} \end{tightemize}
+\sectionsep
+
+\runsubsection{Credit Card Fraud Detection }
+\begin{tightemize}
+\item \normalsize {Achieved 86\% accuracy while classifying credit card frauds with the help of Sampling and logistic regression on an imbalanced Data-set} \end{tightemize}
+\sectionsep
+
+
+\runsubsection{Merchant Locator Chatbot }
+\begin{tightemize}
+\item \normalsize {Built a chatbot to find the nearest Merchant who is available in a disaster affected area with the help of POS ( Point of Sale)  data}\end{tightemize}
+\sectionsep
+
+\runsubsection{Gold Price Prediction System}
+\begin{tightemize}
+\item \normalsize {Predict the increase or decrease in gold prices, based on inter-market variables, using Logistic Regression and SVM.}
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Activities }
+
+
+\runsubsection{Linux Campus Club SJCE \vspace{.5mm}}
+\descript{| Executive Committee }
+\begin{tightemize}
+\item \normalsize {Conducted Sessions on Python , GIT , Machine Learning and worked on installing Ubuntu OS, Open Source Software on all the laboratory Systems.}
+\item \normalsize {Promoted Linux to over 600 active members in the campus by conducted quizzes, programming competitions as part of the annual fests -FOSSCAMP & FOSSBYTE.}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Student Council SJCE \vspace{1mm} }
+\descript{| Editor, SMM, Host ( 2015, 2016 ) }
+
+\begin{tightemize} 
+\item \normalsize {Communicated and gave presentations to potential sponsors for the annual fest Jayciana, which helped in garnering funds of 15,000\$.} \\
+
+\end{tightemize}
+\sectionsep
+
+%%%
+%\runsubsection{Visa Skunkworks}
+%\begin{tightemize}
+%\item \normalsize {Currently Working on Ops-Chatbot to proactively monitor Servers.}\\
+%%%
+
+%\end{tightemize}
+
+\sectionsep
+
+
+
+\end{minipage} 
+\end{document}
